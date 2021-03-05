@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  weather4.0
 //
-//  Created by Macbook Pro on 29.10.2020.
+//  
 //
 
 import UIKit

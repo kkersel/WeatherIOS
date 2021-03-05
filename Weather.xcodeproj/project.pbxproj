@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,15 @@
 		FA735110254AB4F20066D6E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA73510E254AB4F20066D6E1 /* Main.storyboard */; };
 		FA735112254AB4F30066D6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA735111254AB4F30066D6E1 /* Assets.xcassets */; };
 		FA735115254AB4F30066D6E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA735113254AB4F30066D6E1 /* LaunchScreen.storyboard */; };
+		FA73511F254AB52A0066D6E1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA73511E254AB52A0066D6E1 /* Alamofire */; };
+		FA735123254AB5460066D6E1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FA735122254AB5460066D6E1 /* SwiftyJSON */; };
+		FA735126254AB7150066D6E1 /* citiesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA735125254AB7150066D6E1 /* citiesTVC.swift */; };
+		FA735129254AB7AE0066D6E1 /* citiesNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA735128254AB7AE0066D6E1 /* citiesNameCell.swift */; };
+		FA73512C254ABE8B0066D6E1 /* detailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA73512B254ABE8B0066D6E1 /* detailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA735105254AB4F20066D6E1 /* weather4.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weather4.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA735105254AB4F20066D6E1 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA735108254AB4F20066D6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA73510A254AB4F20066D6E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA73510C254AB4F20066D6E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		FA735111254AB4F30066D6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA735114254AB4F30066D6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA735116254AB4F30066D6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA735125254AB7150066D6E1 /* citiesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = citiesTVC.swift; sourceTree = "<group>"; };
+		FA735128254AB7AE0066D6E1 /* citiesNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = citiesNameCell.swift; sourceTree = "<group>"; };
+		FA73512B254ABE8B0066D6E1 /* detailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA735123254AB5460066D6E1 /* SwiftyJSON in Frameworks */,
+				FA73511F254AB52A0066D6E1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +50,7 @@
 		FA7350FC254AB4F20066D6E1 = {
 			isa = PBXGroup;
 			children = (
-				FA735107254AB4F20066D6E1 /* weather4.0 */,
+				FA735107254AB4F20066D6E1 /* Weather */,
 				FA735106254AB4F20066D6E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +58,34 @@
 		FA735106254AB4F20066D6E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA735105254AB4F20066D6E1 /* weather4.0.app */,
+				FA735105254AB4F20066D6E1 /* Weather.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA735107254AB4F20066D6E1 /* weather4.0 */ = {
+		FA735107254AB4F20066D6E1 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
 				FA735108254AB4F20066D6E1 /* AppDelegate.swift */,
 				FA73510A254AB4F20066D6E1 /* SceneDelegate.swift */,
 				FA73510C254AB4F20066D6E1 /* ViewController.swift */,
 				FA73510E254AB4F20066D6E1 /* Main.storyboard */,
+				FA73512B254ABE8B0066D6E1 /* detailVC.swift */,
+				FA735128254AB7AE0066D6E1 /* citiesNameCell.swift */,
+				FA735125254AB7150066D6E1 /* citiesTVC.swift */,
 				FA735111254AB4F30066D6E1 /* Assets.xcassets */,
 				FA735113254AB4F30066D6E1 /* LaunchScreen.storyboard */,
 				FA735116254AB4F30066D6E1 /* Info.plist */,
 			);
-			path = weather4.0;
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA735104254AB4F20066D6E1 /* weather4.0 */ = {
+		FA735104254AB4F20066D6E1 /* Weather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA735119254AB4F30066D6E1 /* Build configuration list for PBXNativeTarget "weather4.0" */;
+			buildConfigurationList = FA735119254AB4F30066D6E1 /* Build configuration list for PBXNativeTarget "Weather" */;
 			buildPhases = (
 				FA735101254AB4F20066D6E1 /* Sources */,
 				FA735102254AB4F20066D6E1 /* Frameworks */,
@@ -82,9 +95,13 @@
 			);
 			dependencies = (
 			);
-			name = weather4.0;
+			name = Weather;
+			packageProductDependencies = (
+				FA73511E254AB52A0066D6E1 /* Alamofire */,
+				FA735122254AB5460066D6E1 /* SwiftyJSON */,
+			);
 			productName = weather4.0;
-			productReference = FA735105254AB4F20066D6E1 /* weather4.0.app */;
+			productReference = FA735105254AB4F20066D6E1 /* Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FA735100254AB4F20066D6E1 /* Build configuration list for PBXProject "weather4.0" */;
+			buildConfigurationList = FA735100254AB4F20066D6E1 /* Build configuration list for PBXProject "Weather" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,11 +127,15 @@
 				Base,
 			);
 			mainGroup = FA7350FC254AB4F20066D6E1;
+			packageReferences = (
+				FA73511D254AB52A0066D6E1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FA735121254AB5460066D6E1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = FA735106254AB4F20066D6E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA735104254AB4F20066D6E1 /* weather4.0 */,
+				FA735104254AB4F20066D6E1 /* Weather */,
 			);
 		};
 /* End PBXProject section */
@@ -137,7 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA735126254AB7150066D6E1 /* citiesTVC.swift in Sources */,
+				FA735129254AB7AE0066D6E1 /* citiesNameCell.swift in Sources */,
 				FA73510D254AB4F20066D6E1 /* ViewController.swift in Sources */,
+				FA73512C254ABE8B0066D6E1 /* detailVC.swift in Sources */,
 				FA735109254AB4F20066D6E1 /* AppDelegate.swift in Sources */,
 				FA73510B254AB4F20066D6E1 /* SceneDelegate.swift in Sources */,
 			);
@@ -292,7 +316,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Alexandr-Solovev.weather4-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chernov-Artem.weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,7 +334,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Alexandr-Solovev.weather4-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chernov-Artem.weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +344,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA735100254AB4F20066D6E1 /* Build configuration list for PBXProject "weather4.0" */ = {
+		FA735100254AB4F20066D6E1 /* Build configuration list for PBXProject "Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA735117254AB4F30066D6E1 /* Debug */,
@@ -329,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA735119254AB4F30066D6E1 /* Build configuration list for PBXNativeTarget "weather4.0" */ = {
+		FA735119254AB4F30066D6E1 /* Build configuration list for PBXNativeTarget "Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA73511A254AB4F30066D6E1 /* Debug */,
@@ -339,6 +363,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA73511D254AB52A0066D6E1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+		FA735121254AB5460066D6E1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA73511E254AB52A0066D6E1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA73511D254AB52A0066D6E1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FA735122254AB5460066D6E1 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA735121254AB5460066D6E1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA7350FD254AB4F20066D6E1 /* Project object */;
 }
